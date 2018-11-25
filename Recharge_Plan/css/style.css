@@ -1,0 +1,591 @@
+
+
+.f-12{
+	font-size: 12px;
+}
+.f-13{
+	font-size: 13px;
+}
+.f-14{
+	font-size: 14px;
+}
+.f-15{
+	font-size: 15px!important;
+}
+.f-16{
+		font-size:16px;
+	}
+
+.f-18{
+	font-size: 18px;
+}
+.f-20{
+	font-size: 20px;
+}
+.f-25{
+	font-size: 25px;
+}
+.f-30{
+	font-size: 30px;
+}
+.f-bold{
+	font-weight: bold;
+}
+.align-center{
+	text-align: center;
+}
+.top-bottom-margin{
+	margin: 15px auto;
+}
+.m-top{
+	margin-top: 0;
+}
+.m-bottom{
+	margin-bottom: 0!important;
+}
+.m-right-12{
+	margin-right: 12px;
+}
+.mt-30{margin-top: 30px;}
+.mb-30{margin-bottom: 30px;}
+.mb-15{margin-bottom: 15px;}
+.mt-5{
+	margin-top: 5px;
+}
+.mb-5{
+	margin-bottom: 5px;
+}
+.p-right{
+	padding-right: 0!important;
+}
+.p-left{
+	padding-left: 0!important;
+}
+.text-white{
+	color: #fff!important;
+}
+.text-navy{
+	color: #012b72;
+}
+.text-black{
+	color: #000!important;
+}
+.bg-success{
+	background-color: #4CAF50!important;
+}
+.bg-navy{
+	background-color: #012b72;
+}
+.bg-danger{
+	background-color: #dc3545!important;
+}
+.btn-lightblue{
+	background-color: #00b9f5;
+    border-color: #00b9f5;
+}
+.btn-lightblue:hover{
+	background-color: #019fd2;
+}
+.btn .btn-sm{
+	    padding: 2px 8px;
+}
+.table-cell{
+	display: table-cell;
+}
+.border-top{
+	border-top: 1px solid #ddd;
+}
+.bg-li-blue{
+	    background-color: rgb(236, 239, 243);
+}
+.bg-li-coral{
+	    background-color: rgb(255, 231, 231);
+}
+@media (max-width: 354px) {
+	/*****Navbar-nav******/
+	.top-navbar-nav{
+		float: left;
+		margin: 0!important;
+		width: 100%;
+	}
+	.nav>li{
+		    border-bottom: 1px solid #646970!important;
+	}
+	.nav>li:last-child{
+		border-bottom: none;
+	}
+	#myNavbar.navbar-collapse{
+		padding: 0!important;
+	}
+	.txt-center{
+		text-align: center;
+	}
+	/****Logo-img Container****/
+	.re-logo{
+		width: 72px!important;
+		height: 72px!important;
+	}
+	/******Search Result********/
+	.heading{
+		margin-top: 15px;
+	}
+	
+	/*******Hidden Filter********/
+
+	.hidden-filter{
+		margin-bottom: 0!important;
+	}
+	.f-inverse, .f-toggle
+	{
+	border: none!important;
+	color: #000!important;
+	background-color: #efefef!important;
+	}
+	.f-inverse, .f-collapse{
+		    border-color: #e3e6ea!important;
+	}
+	.f-header{
+		background-color: #fff;
+	}
+	.f-header, .f-collapse{
+		    box-shadow: 1px 1px 1px #ddd!important;
+	}
+	.btn.f-toggle{
+		margin-top: 15px;
+		height: 0;
+	}
+	.f-inverse .f-toggle:focus, .f-inverse .f-toggle:hover{
+		background-color: #efefef!important;
+		outline: 0!important;
+	}
+	.caret-icon{
+		height: 22px!important;
+	}
+
+	/*********Modal CSS*********/
+	.modal:before {
+  		content: '';
+  		display: inline-block;
+  		height: 0!important;
+  		vertical-align: middle;
+  		margin-right: -4px;
+		}
+
+	/********************/
+	/*.navbar-toggle.filter-toggle .icon-bar{background-color: #fff;}
+	.filter-inverse, .filter-toggle:hover{
+		border: 1px solid #000!important;
+		}
+	.filter-inverse{
+		background-color: #fff;
+		box-shadow: 1px 0px 3px rgba(134, 120, 120, 0.5);
+	}
+	.filter-toggle{
+	background-color: #999!important;
+	}
+	.filter-inverse, .filter-toggle
+	{
+	border: none!important;
+	color: #000!important;
+	}
+	.filter-row{
+	border-top: 1px solid #f5f5f5;
+	}
+	#demo{
+	border: none;
+	}
+	.bg-grey{
+	background-color: #fbfbfb!important;
+	}*/
+}
+/*******END*********/
+
+
+@media only screen and (max-width: 600px) {
+	.border-b
+	{
+		border-bottom: 1px solid #ddd;
+	}
+	.get-plan {
+	    padding: 3px 0px!important;
+	}
+	/****Navigation****/
+	.top-navbar-nav{
+		float: left;
+		margin: 0!important;
+		width: 100%;
+	}
+	.nav>li{
+		    border-bottom: 1px solid #646970!important;
+	}
+	.nav>li:last-child{
+		border-bottom: none;
+	}
+	.navbar-collapse{
+		padding: 0!important;
+	}
+
+	.txt-center{
+		text-align: center;
+	}
+
+	/*******Hidden Filter********/
+	.hidden-filter{
+		margin-bottom: 0!important;
+	}
+	.f-inverse, .f-toggle
+	{
+	border: none!important;
+	color: #000!important;
+	background-color: #efefef!important;
+	}
+	.f-inverse, .f-collapse{
+		    border-color: #e3e6ea!important;
+	}
+	.f-header{
+		background-color: #fff;
+	}
+	.f-header, .f-collapse{
+		    box-shadow: 1px 1px 1px #ddd!important;
+	}
+	.btn.f-toggle{
+		margin-top: 15px;
+		height: 0;
+	}
+	.f-inverse .f-toggle:focus, .f-inverse .f-toggle:hover{
+		background-color: #efefef!important;
+		outline: 0!important;
+	}
+	.caret-icon{
+		height: 22px!important;
+	}
+}
+/*****Screen end ********/
+
+/* Modal */
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.modal-footer{
+	border: none!important;
+}
+
+/**********Modal CSS*************/
+#estimation td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#estimation tr:nth-child(even){background-color: #f2f2f2;}
+
+#estimation tr:hover {background-color: #ddd;}
+
+#estimation th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #012b72;
+    color: white;
+}
+/*****************/
+
+
+/* End Modal */
+
+/* Top Navigation */
+.navbar{
+	border-radius: 0px!important;
+}
+#logo{
+	height: 30px;
+}
+#logo:hover{
+	opacity: 0.8;
+}
+.top-nav-inverse{
+	background-color: #012b72!important;
+    border-color: #0d2040!important;
+}
+.top-nav-inverse .top-nav-toggle{
+	background-color: #019fd2;
+	border-color: #019fd2!important;
+}
+.top-nav-inverse .top-nav-toggle:hover {
+    background-color: #019fd2!important;
+}
+.top-nav-inverse .navbar-collapse, .top-nav-inverse {
+    border-color: #0d2040!important;
+}
+.top-navbar-nav{
+	float: right !important;
+}
+.top-navbar-nav .active-cls{
+	border-bottom: 2px solid #fff;
+	opacity: 0.8;
+}
+.top-navbar-nav li:hover{
+	opacity: 0.8;
+}
+
+.top-navbar-nav a{
+	color: #fff!important;
+}
+
+/*Filter Heading */
+
+.filter-row{
+	padding-bottom: 3px;
+}
+.filter{
+	background-color: #fff;
+	position: sticky; 
+	top: 0;
+	z-index: 1;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 1px 0px 3px rgba(134, 120, 120, 0.5);
+	padding-bottom: 0;
+	margin-bottom: 25px;
+}
+.filter-contain{
+	padding-top: 3px;
+}
+.modify{
+	/*float: right;*/
+	margin-top: 10px;
+}s
+
+/*Customer Checkbox*/
+/* The container */
+.operator-check{
+	display: inline!important;
+}
+.custom-check {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    font-weight: normal;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.custom-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 0px;
+    border: 1px solid #012b72;
+    background-color: #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-check input:checked ~ .checkmark {
+    /*background-color: #012b72;*/
+    border: 1px solid #012b72;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-check input:checked ~ .checkmark:after {
+    display: inline;
+}
+
+/* Style the checkmark/indicator */
+.custom-check .checkmark:after {
+    top: 1px;
+    width: 5px;
+    height: 8px;
+    left: 4px;
+    border: solid #012b72;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*End*/
+
+/*********Showing Results *********/
+.info{
+	border: 1px solid rgba(156, 141, 142, 0.5);
+	border-radius: 3px;
+}
+.info:hover{
+	box-shadow: 2px 1px 2px rgba(0,0,0,0.3);
+}
+.border-right{
+	border-right: 1px solid #efefef;
+}
+.get-plan{
+	padding: 15px;
+}
+.re-logo{
+	width: 100px;
+    height: 92px;
+    }
+.re-logo img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+/*******Best Plan Badge*********/
+.best-text{
+	padding: 10px;
+}
+.monthly-cost{
+	padding-top: 15px;
+}
+.amt{
+	line-height: 15px;
+}
+
+.lower-pack{
+	border-top: 1px solid #efefef;
+	margin: 0 15px;
+}
+.black-text{
+	padding-top: 10px;
+}
+.more-info{
+	margin: 10px 0;
+}
+.more-info-btn{
+	border: 1px solid rgba(256,0,0,0.5);
+}
+.line-h{
+	line-height: 1px;
+}
+
+/* Footer */
+.page-footer{
+	padding: 20px 0;
+	margin-top: 15px;
+	background-color: #031533;
+}
+.page-footer .list{
+	list-style-type: none;
+	padding-left: 0px;
+}
+.list a{
+	color: #eddede;
+	line-height: 22px;
+}
+.list a:hover{
+	color: #fff;
+}
+#footfooter{
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 17px;
+	border-top: 1px solid rgba(121, 115, 115, 0.5);
+}
+#footfooter a{
+	color: #fff;
+}
+#footfooter a:hover{
+	color: #fff;
+}
+
+.para-heading{
+	font-weight: 600;
+    font-size: 11px;
+    color: #333;
+}
+
+/********Plan 75 Page**********/
+.google-ads{
+	margin: 15px auto 0 auto;
+    text-align: center;
+}
+	
+.calls{
+	border-bottom: 1px solid #eaeaea;
+	padding-bottom: 6px;
+}
+.div2{
+	float: right;
+}
+.cards{
+	margin-top: 15px;
+}
+.about-plan ul{
+	list-style-type: none;
+	padding-left: 20px;
+}
+.recharge-icon{
+	width: 50px;
+	height: 50px;
+
+}
+.recharge-icon img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.details .media-body{
+	vertical-align: middle;
+}
+.media.media-detail:first-child{
+	margin-top: 15px!important;
+}
+.pa-top-15{
+	padding-top: 15px;
+}
+/*********************/
+/*****Side Plans*******/
+.card1{
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+	padding: 10px;
+}
+.price-tag{
+	display: block!important;
+    padding: 8px!important;
+    width: 20%;
+    margin: 5px auto;
+
+}
+.power-head{
+	padding-bottom: 5px;
+    border-bottom: 1px solid #bcb2b2;
+    font-weight: normal!important;
+    margin-bottom: 18px;
+}
+/********************/

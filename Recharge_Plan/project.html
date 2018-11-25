@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Online Recharge</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+      	<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Recharge Plans</h4>
+        </div>
+        <div class="modal-body">
+        	<div class="table-responsive">
+          		<table class="table table-hover table-bordered table-stripped" id="estimation">
+          			<thead>
+          				<tr>
+          					<th>Type</th>
+          					<th>Usage</th>
+          					<th>Free Units</th>
+          					<th>Rate</th>
+          					<th>Cost</th>
+          				</tr>
+          			</thead>
+          			<tbody>
+          				<tr>
+          					<td colspan="4">Table Plan & TopupCost</td>
+          					<td>&#8377; 399.00</td>
+          				</tr>
+          				<tr>
+          					<td colspan="4">Service Tax</td>
+          					<td>&#8377; 71.82</td>
+          				</tr>
+          				<tr class="f-bold">
+          					<td colspan="4">Total</td>
+          					<td>&#8377; 470.82</td>
+          				</tr>
+          			</tbody>
+          		</table>
+      		</div>
+        </div>
+        
+      </div>
+      
+    </div>
+</div>
+  
+  
+<!-- End Modal -->
+	<nav class="navbar navbar-inverse top-nav-inverse m-bottom">
+	  <div class="container">
+	    <div class="navbar-header">	      
+	      <a class="navbar-brand" href="#"><img src="recharge_plan.png" alt="Recharge_plan" id="logo"></a>
+	      <button type="button" class="navbar-toggle top-nav-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav top-navbar-nav navbar-right">
+	        <li class="active-cls"><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">DTH Plan</a></li>
+			<li><a href="#">Postpaid Plan</a></li>
+			<li><a href="#">Prepaid Mobile Plan</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="filter hidden-xs">
+		<div class="container filter-contain">
+			<form>
+				<div class="row filter-row">
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<p class="text-navy f-15">Operator:</p>
+					
+						<label class="custom-check f-13 m-right-12">Airtel
+						  <input type="checkbox" checked="checked">
+						  <span class="checkmark"></span>
+						</label>
+					
+					
+						<label class="custom-check f-13 m-right-12">Idea
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					
+					
+						<label class="custom-check f-13 m-right-12">Jio
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					
+					
+						<label class="custom-check f-13 m-right-12">MTNL
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					
+						<label class="custom-check f-13 m-right-12">Vodafone
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+
+					<div class="col-sm-4 col-md-4 col-lg-4"> 
+				
+						<div>
+							<p class="text-navy f-15">Plan Type:</p>
+
+							<label class="custom-check f-13 m-right-12">Per Minute
+						  		<input type="checkbox" checked="checked">
+						  		<span class="checkmark"></span>
+							</label>
+							<label class="custom-check f-13 m-right-12">Per Second
+						  		<input type="checkbox">
+						  		<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+					<div class="col-sm-2 col-md-2 col-lg-2 txt-center">
+						<button class="btn btn-lightblue modify text-white">Search</button>
+					</div>
+				</div>	
+			</form>
+		</div>
+	</div>
+
+	<!----------Hidden filter div---------->
+	<nav class="navbar navbar-inverse hidden-lg f-inverse">
+ 		<div class="container">
+    		<div class="navbar-header f-header">
+      		
+      			<button class="btn btn-danger navbar-btn navbar-right navbar-toggle f-toggle" type="button" data-toggle="collapse" data-target="#demo"><span class="caret caret-icon"></span></button>
+      			<a class="navbar-brand" href="#">Filter</a>
+    		</div>
+    		<div class="collapse navbar-collapse f-collapse" id="demo">
+    			<!-- filter content -->
+    			<div class="filter hidden-filter">
+					<div class="container filter-contain">
+					<form>
+				<div class="row filter-row">
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<p class="text-navy f-15">Operator:</p>
+					
+						<label class="custom-check f-13 m-right-12">Airtel
+						  <input type="checkbox" checked="checked">
+						  <span class="checkmark"></span>
+						</label>
+					
+					
+						<label class="custom-check f-13 m-right-12">Idea
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					
+					
+						<label class="custom-check f-13 m-right-12">Jio
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					
+					
+						<label class="custom-check f-13 m-right-12">MTNL
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					
+						<label class="custom-check f-13 m-right-12">Vodafone
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+
+					<div class="col-sm-4 col-md-4 col-lg-4"> 
+				
+						<div>
+							<p class="text-navy f-15">Plan Type:</p>
+
+							<label class="custom-check f-13 m-right-12">Per Minute
+						  		<input type="checkbox" checked="checked">
+						  		<span class="checkmark"></span>
+							</label>
+							<label class="custom-check f-13 m-right-12">Per Second
+						  		<input type="checkbox">
+						  		<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+					<div class="col-sm-2 col-md-2 col-lg-2 txt-center">
+						<button class="btn btn-lightblue modify text-white">Search</button>
+					</div>
+				</div>	
+			</form>
+		</div>
+	</div>
+    			<!--  -->
+    		</div>
+    		
+    		
+  		</div>
+	</nav>
+
+
+ <!-- -------- -->
+ <!--
+	<nav class="navbar m-bottom hidden-lg filter-inverse">
+	  <div class="container">
+	    <div class="navbar-header filter-header">	      
+	      <a class="navbar-brand" href="#">Filter</a>
+	      <button type="button" class="navbar-toggle filter-toggle" data-toggle="collapse" data-target="#demo">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	    </div>
+	    <div class="collapse navbar-collapse" id="demo">
+	      <div class="filter">
+		<div class="container filter-contain">
+			<form>
+				<div class="row filter-row">
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<p class="text-navy f-15">Operator:</p>
+					
+						<label class="custom-check f-13 m-right-12">Airtel
+						  <input type="checkbox" checked="checked">
+						  <span class="checkmark"></span>
+						</label>
+					
+					
+						<label class="custom-check f-13 m-right-12">Idea
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					
+					
+						<label class="custom-check f-13 m-right-12">Jio
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					
+					
+						<label class="custom-check f-13 m-right-12">MTNL
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					
+						<label class="custom-check f-13 m-right-12">Vodafone
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+
+					<div class="col-sm-4 col-md-4 col-lg-4"> 
+				
+						<div>
+							<p class="text-navy f-15">Plan Type:</p>
+
+							<label class="custom-check f-13 m-right-12">Per Minute
+						  		<input type="checkbox" checked="checked">
+						  		<span class="checkmark"></span>
+							</label>
+							<label class="custom-check f-13 m-right-12">Per Second
+						  		<input type="checkbox">
+						  		<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+					<div class="col-sm-2 col-md-2 col-lg-2 txt-center">
+						<button class="btn btn-lightblue modify text-white">Search</button>
+					</div>
+				</div>	
+			</form>
+		</div>
+	</div>
+	    </div>
+	  </div>
+	</nav> -->
+	<!------------------------>
+	<section>
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-8 col-md-8 col-lg-8">
+					<h2 class="f-16 m-top m-bottom heading">Showing <span class="f-bold">34 results</span> that matches your search</h2>
+					<!--First Div-->
+					<div class="info top-bottom-margin">
+						<div class="row">
+							<div class="col-sm-9 col-md-9 col-lg-9">
+								<div class="align-center border-b">
+									<div class="row">
+										<div class="col-sm-3 col-md-3 col-xs-3">
+											<div class="re-logo">
+												<img src="reliance.png" alt="reliance-logo">
+											</div>
+										</div>
+										<div class="col-sm-9 col-md-9 col-xs-9">
+											<div class="get-plan">
+												<p>
+										
+												<span class="text-navy f-bold f-16">Plan 75</span><span class="text-muted"> (75.0 for 30 days)</span>
+												</p>
+												<button class="btn btn-lightblue get-plan-btn align-center text-white btn-sm" title="get this plan">Get this plan</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-md-3 col-lg-3 text-center mt-5">
+								<div class="label best-plan label-warning"><span class="best-text">BEST PLAN</span></div>
+								<div class="monthly-cost align-center">
+									<p>Average Monthly Cost</p>
+									<p class="f-25 amt">&#8377;88.50</p>
+								</div>
+							</div>
+						</div>
+						<div class="row"> 
+							<div class="f-12">
+								<div class="lower-pack"></div>
+								<div class="col-sm-9 col-md-9 col-lg-9">
+									<div class="black-text align-center">
+										<div class="row">
+											<div class="col-sm-3 col-md-3 p-right">
+												<p class="para-heading">Monthly Pack Cost</p>
+												<p class="line-h">75.00</p>
+											</div>
+											<div class="col-sm-1 col-md-1 p-right p-left">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</div>
+											<div class="col-sm-4 col-md-4 p-right p-left">
+												<p class="para-heading">Estimated Monthly Usage Charges</p>
+												<p class="line-h">--</p>
+											</div>
+											<div class="col-sm-1 col-md-1 p-right p-left">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</div>
+											<div class="col-sm-3 col-md-3 p-left">
+												<p class="para-heading">Service Tax</p>
+												<p class="line-h">&#8377;13.50</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-md-3 col-lg-3">
+									<div class="more-info align-center">
+										<button class="btn btn-default more-info-btn"  data-toggle="modal" data-target="#myModal">More Information</button>
+
+										<!--Modal-->
+
+
+										<!--End Modal-->
+
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<!--First div end-->
+
+					<!--2nd Div-->
+					<div class="info top-bottom-margin">
+						<div class="row">
+							<div class="col-sm-9 col-md-9 col-lg-9">
+								<div class="align-center border-b">
+									<div class="row">
+										<div class="col-sm-3 col-md-3 col-xs-3">
+											<div class="re-logo">
+												<img src="vodafone.png" alt="vodafone-logo">
+											</div>
+										</div>
+										<div class="col-sm-9 col-md-9 col-xs-9">
+											<div class="get-plan">
+												<p>
+				
+												<span class="text-navy f-bold f-16">Plan E 100</span><span class="text-muted"> (100.0 for 30 days)</span>
+												</p>
+												<button class="btn btn-lightblue get-plan-btn align-center text-white btn-sm" title="get this plan">Get this plan</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-md-3 col-lg-3 text-center mt-5">
+								<div class="monthly-cost">
+									<p>Average Monthly Cost</p>
+									<p class="f-25 amt">&#8377; 95.50</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="f-12"> 
+								<div class="lower-pack"></div>
+								<div class="col-sm-9 col-md-9 col-lg-9">
+									<div class="black-text align-center">
+										<div class="row">
+											<div class="col-sm-3 col-md-3 p-right">
+												<p>Monthly Pack Cost</p>
+												<p class="line-h">100.00</p>
+											</div>
+											<div class="col-sm-1 col-md-1 p-right p-left">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</div>
+											<div class="col-sm-4 col-md-4 p-right p-left">
+												<p>Estimated Monthly Usage Charges</p>
+												<p class="line-h">--</p>
+											</div>
+											<div class="col-sm-1 col-md-1 p-right p-left">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</div>
+											<div class="col-sm-3 col-md-3 p-left">
+												<p>Service Tax</p>
+												<p class="line-h">&#8377; 17.50</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-md-3 col-lg-3">
+									<div class="more-info align-center">
+										<button class="btn btn-default more-info-btn"  data-toggle="modal" data-target="#myModal">More Information</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<!--2nd div end-->
+
+					<!--3rd Div-->
+					<div class="info top-bottom-margin">
+						<div class="row">
+							<div class="col-sm-9 col-md-9 col-lg-9">
+								<div class="align-center border-b">
+									<div class="row">
+										<div class="col-sm-3 col-md-3 col-xs-3">
+											<div class="re-logo">
+												<img src="jio.png" alt="jio-logo">
+											</div>
+										</div>
+										<div class="col-sm-9 col-md-9 col-xs-9">
+											<div class="get-plan">
+												<p>
+												
+												<span class="text-navy f-bold f-16">Plan 110</span><span class="text-muted"> (130.0 for 30 days)</span>
+												</p>
+												<button class="btn btn-lightblue get-plan-btn btn-sm align-center text-white btn-sm" title="get this plan">Get this plan</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-md-3 col-lg-3 text-center mt-5">
+								<div class="label best-plan label-warning"><span class="best-text">BEST PLAN</span></div>
+								<div class="monthly-cost">
+									<p>Average Monthly Cost</p>
+									<p class="f-25 amt">&#8377; 125.50</p>
+								</div>
+							</div>
+						</div>
+
+						
+						<div class="row">
+							<div class="f-12"> 
+								<div class="lower-pack"></div>
+								<div class="col-sm-9 col-md-9 col-lg-9">
+									<div class="black-text align-center">
+										<div class="row">
+											<div class="col-sm-3 col-md-3 p-right">
+												<p>Monthly Pack Cost</p>
+												<p class="line-h">110.00</p>
+											</div>
+											<div class="col-sm-1 col-md-1 p-right p-left">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</div>
+											<div class="col-sm-4 col-md-4 p-right p-left">
+												<p>Estimated Monthly Usage Charges</p>
+												<p class="line-h">--</p>
+											</div>
+											<div class="col-sm-1 col-md-1 p-right p-left">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</div>
+											<div class="col-sm-3 col-md-3 p-left">
+												<p>Service Tax</p>
+												<p class="line-h"> &#8377;18.50</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-md-3 col-lg-3">
+									<div class="more-info align-center">
+										<button class="btn btn-default more-info-btn"  data-toggle="modal" data-target="#myModal">More Information</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<!--3rd div end-->
+
+					<!--4th Div-->
+					<div class="info top-bottom-margin">
+						<div class="row">
+							<div class="col-sm-9 col-md-9 col-lg-9">
+								<div class="align-center border-b">
+									<div class="row">
+										<div class="col-sm-3 col-md-3 col-xs-3">
+											<div class="re-logo">
+												<img src="reliance.png" alt="reliance-logo">
+											</div>
+										</div>
+										<div class="col-sm-9 col-md-9 col-xs-9">
+											<div class="get-plan">
+												<p>
+												
+												<span class="text-navy f-bold f-16">Roaming SRTP FR 149</span><span class="text-muted"> (149.0 for 30 days)</span>
+												</p>
+												<button class="btn btn-lightblue get-plan-btn align-center text-white btn-sm" title="get this plan">Get this plan</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-md-3 col-lg-3 text-center mt-5">
+								<div class="monthly-cost">
+									<p>Average Monthly Cost</p>
+									<p class="f-25 amt">&#8377; 150.50</p>
+								</div>
+							</div>
+						</div>
+
+						
+							<div class="row">
+								<div class="f-12">
+								<div class="lower-pack"></div> 
+								<div class="col-sm-9 col-md-9 col-lg-9">
+									<div class="black-text align-center">
+										<div class="row">
+											<div class="col-sm-3 col-md-3 p-right">
+												<p>Monthly Pack Cost</p>
+												<p class="line-h">149.00</p>
+											</div>
+											<div class="col-sm-1 col-md-1 p-right p-left">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</div>
+											<div class="col-sm-4 col-md-4 p-right p-left">
+												<p>Estimated Monthly Usage Charges</p>
+												<p class="line-h">--</p>
+											</div>
+											<div class="col-sm-1 col-md-1 p-right p-left">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</div>
+											<div class="col-sm-3 col-md-3 p-left">
+												<p>Service Tax</p>
+												<p class="line-h">&#8377; 26.82</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-md-3 col-lg-3">
+									<div class="more-info align-center">
+										<button class="btn btn-default more-info-btn"  data-toggle="modal" data-target="#myModal">More Information</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<!--4th div end-->
+
+					<!--5th Div-->
+					<div class="info top-bottom-margin">
+						<div class="row">
+							<div class="col-sm-9 col-md-9 col-lg-9">
+								<div class="align-center border-b">
+									<div class="row">
+										<div class="col-sm-3 col-md-3 col-xs-3">
+											<div class="re-logo">
+												<img src="idea.png" alt="idea-logo">
+											</div>
+										</div>
+										<div class="col-sm-9 col-md-9 col-xs-9">
+											<div class="get-plan">
+												<p>
+												
+												<span class="text-navy f-bold f-16">Plan 160</span><span class="text-muted"> (180.0 for 30 days)</span>
+												</p>
+												<button class="btn btn-lightblue get-plan-btn align-center text-white btn-sm" title="get this plan">Get this plan</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-md-3 col-lg-3 text-center mt-5">
+								<div class="monthly-cost">
+									<p>Average Monthly Cost</p>
+									<p class="f-25 amt">&#8377; 160.50</p>
+								</div>
+							</div>
+						</div>
+
+						 
+							<div class="row">
+								<div class="f-12">
+									<div class="lower-pack"></div>
+									<div class="col-sm-9 col-md-9 col-lg-9">
+									<div class="black-text align-center">
+										<div class="row">
+											<div class="col-sm-3 col-md-3 p-right">
+												<p>Monthly Pack Cost</p>
+												<p class="line-h">160.00</p>
+											</div>
+											<div class="col-sm-1 col-md-1 p-right p-left">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</div>
+											<div class="col-sm-4 col-md-4 p-right p-left">
+												<p>Estimated Monthly Usage Charges</p>
+												<p class="line-h">--</p>
+											</div>
+											<div class="col-sm-1 col-md-1 p-right p-left">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</div>
+											<div class="col-sm-3 col-md-3 p-left">
+												<p>Service Tax</p>
+												<p class="line-h">&#8377; 20.50</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-md-3 col-lg-3">
+									<div class="more-info align-center">
+										<button class="btn btn-default more-info-btn"  data-toggle="modal" data-target="#myModal">More Information</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<!--5th div end-->
+
+
+
+				</div>
+
+
+
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<div class="ad-image">
+						<img src="https://dummyimage.com/300x350/000/fff" class="img-responsive" alt="dummyimage" title="dummyimage">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Footer-->
+
+	<footer class="page-footer text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="browse-col">
+					<h4>BROWSE</h4>
+						<ul class="list f-12">
+							<li><a href="#!mob-plan">Mobile Plans</a></li>
+							<li><a href="#!data-card-plan">Data Card Plans</a></li>
+							<li><a href="#!tab-plan">Tablet Plans</a></li>
+							<li><a href="#!data-plan">Data Plans</a></li>
+							<li><a href="#!city-plan">By City / Town</a></li>
+							<li><a href="#!operator">By Operator</a></li>
+							<li><a href="#!mob-app">Mobile App</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="compare-col">
+						<h4>COMPARE</h4>
+							<ul class="list f-12">
+								<li><a href="#!">Compare Mobile Plans</a></li>
+								<li><a href="#!">Search Datacard Plans</a></li>
+								<li><a href="#!">Search Tablet Plans</a></li>
+								<li><a href="#!">Compare Talktime Offers</a></li>
+								<li><a href="#!">Compare RateCutters</a></li>
+								<li><a href="#!">Bulk Recharge</a></li>
+								<li><a href="#!">Recharge Plan API</a></li>
+								<li><a href="#!">Recharge Plan SDK</a></li>
+							</ul>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="help">
+						<h4>HELP</h4>
+						<ul class="list f-12">
+							<li><a href="#!">What is Recharge Plan About</a></li>
+							<li><a href="#!">FAQ</a></li>
+							<li><a href="#!">How To Use</a></li>
+							<li><a href="#!">Contact Us</a></li>
+							<li><a href="#!">Press Kit</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="guides">
+						<h4>GUIDES</h4>
+						<ul class="list f-12">
+							<li><a href="#!">APN's'</a></li>
+							<li><a href="#!">How To</a></li>
+							<li><a href="#!">Balance Enquiries</a></li>
+							<li><a href="#!">Customer Care</a></li>
+							<li><a href="#!">All USSD Codes</a></li>
+							<li><a href="#!">All SMS Codes</a></li>
+							<li><a href="#!">Movies</a></li>
+						</ul>	
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="policies">
+						<h4>POLICIES</h4>
+						<ul class="list f-12">
+							<li><a href="#!">Terms of Use</a></li>
+							<li><a href="#!">Privacy Policiy</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="footfooter">
+				2018
+				<a href="#!" class="f-12">Maitkon</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
